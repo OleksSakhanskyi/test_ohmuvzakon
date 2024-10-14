@@ -1,0 +1,29 @@
+{
+    "name": "Ohmuv zakon kalkulator",         
+    "short_name": "ohmuv zakon",             
+  
+    "icons": [
+      {
+        "src": "/icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/512x512-png.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+  
+    "start_url": "/index.html",          
+  
+    "display": "standalone",             
+  
+    "background_color": "#FFFFFF",       
+    "theme_color": "#0000FF",            
+    "description": "Toto je ukázková PWA aplikace.", 
+    "orientation": "portrait",           
+    "scope": "/",                        
+    "lang": "cs-CZ",                     
+    "dir": "ltr"
+  }
