@@ -25,9 +25,15 @@ else{
         document.getElementById('number1').value = number1;
         document.getElementById('text').innerText = "";
     } else if (isNaN(number2)) {
+        if (number1 === 0) {
+            document.getElementById('text').innerText = "Nelze dělit nulou";
+            return;
+        } 
+        else{
         number2 = number3 / number1;
         document.getElementById('number2').value = number2;
         document.getElementById('text').innerText = "";
+    }
     } else if (isNaN(number3)) {
         if (number2 === 0) {
             document.getElementById('text').innerText = "Nelze dělit nulou";
