@@ -25,7 +25,7 @@ else{
         document.getElementById('number1').value = number1;
         document.getElementById('text').innerText = "";
     } else if (isNaN(number2)) {
-        number2 = number3 * number1;
+        number2 = number3 / number1;
         document.getElementById('number2').value = number2;
         document.getElementById('text').innerText = "";
     } else if (isNaN(number3)) {
