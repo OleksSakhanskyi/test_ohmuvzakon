@@ -14,7 +14,7 @@ function calculate() {
     let number1 = parseFloat(document.getElementById('number1').value);
     let number2 = parseFloat(document.getElementById('number2').value);
     let number3 = parseFloat(document.getElementById('number3').value);
-if((isNaN(number1)||isNaN(number2))&&(isNaN(number1)||isNaN(number3))&&(isNaN(number3)||isNaN(number2)))
+if((isNaN(number1)||isNaN(number2))&&(isNaN(number1)||isNaN(number3))&&(isNaN(number3)||isNaN(number2))&&(isNaN(number3)||isNaN(number2)||isNaN(number1)))
 {
     document.getElementById('text').innerText = "Nelze spocitat";
      return;
