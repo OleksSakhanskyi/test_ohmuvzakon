@@ -17,32 +17,32 @@ function calculate()
     const number2 = parseFloat(document.getElementById('number2').value);
     const number3 = parseFloat(document.getElementById('number3').value);
 
+    let vysledek;
    if(isNaN(number1))
    {
-    number1= number3*number2;
-    document.getElementById('number1').innerText=number1;
+    vysledek = number3*number2;
+    document.getElementById('number1').innerText=vysledek;
    }
    else
     {
     if(isNaN(number2))
     {
-    number2=number3*number1;
-    document.getElementById('number2').innerText=number2;
+    vysledek = number3*number1;
+    document.getElementById('number2').innerText=vysledek;
     }
     else
     {
     if(isNaN(number3))
     {
-        if(number2==0)
+        if(number2===0)
         {
-            number3 = "Nelze delit nulou";
-            document.getElementById('text').innerText=number3;
+            resultDisplay.textContent = "Nelze dělit nulou!";
         return;
         }
         else
         {
-            number3 = number1 / number2;
-            document.getElementById('number3').innerText=number3;
+            vysledek = number1 / number2;
+            document.getElementById('number3').innerText=vysledek;
         }
     }
 }
